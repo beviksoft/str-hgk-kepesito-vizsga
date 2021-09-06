@@ -8,10 +8,10 @@ servers:
 paths:
   /school:
     get:
-      description: Returns a list of students
+      description: Returns a list of schools
       responses:
         '200':
-          description: List of students returned successfully
+          description: List of schools returned successfully
           content:
             application/json:
               schema:
