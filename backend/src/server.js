@@ -16,7 +16,6 @@ app.use(morgan('common'));
 app.use(express.json());
 
 app.use('/student', require('./controllers/student/student.routes'));
-//app.use('/school', (req, res, next) => res.json([]));
 app.use('/school', require('./controllers/school/school.routes'));
 app.use('/classroom', require('./controllers/classroom/classroom.routes'));
 app.use('/building', (req, res, next) => res.json([]))
